@@ -1,17 +1,18 @@
 import { useState } from "react";
 import { TaskList } from "../components/Tasks/TaskList";
-import { TASKS } from "../utils/tasks.js"
+import { TaskForm } from "../components/Tasks/TaskForm";
+import { TASKS } from "../utils/tasks.js";
 
 export const Home = () => {
-    const [ tasks, setTasks ] = useState(TASKS)
+	const [tasks, setTasks] = useState(TASKS);
 
-const toggleTask = (id) => {
-    setTasks((prev) =>
-        prev.map((task) =>
-            task.id === id ? { ...task, completed: !task.completed } : task
-        )
-    );
-};
+	const toggleTask = (id) => {
+		setTasks((prev) => prev.map((task) => (task.id === id ? { ...task, completed: !task.completed } : task)));
+	};
+
+	const addTask = (newTask) => {
+		setTasks((prev) => [...prev, newTask]);
+	};
 
 	return (
 		<div className="max-w-6xl mx-auto px-6 py-10">
@@ -20,7 +21,8 @@ const toggleTask = (id) => {
 				<p className="text-text-tertiary mt-1">Tus tareas de hoy</p>
 			</div>
 
-			<TaskList tasks={tasks} toggleTask={toggleTask}/>
+			<TaskForm addTask={addTask} />
+			<TaskList tasks={tasks} toggleTask={toggleTask} />
 		</div>
 	);
 };
