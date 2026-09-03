@@ -90,22 +90,22 @@ THEME
 	--color-sage-900: #2a331e;
 	--color-sage-950: #1a2013;
 
-	/* BACKGROUND COLOR — modo oscuro */
-	--color-bg-primary: #241a14;
-	--color-bg-secondary: #2e2119;
-	--color-bg-tertiary: #3a2a1f;
-	--color-bg-card: #332419;
-	--color-bg-overlay: rgba(36, 26, 20, 0.8);
+	/* BACKGROUND COLOR — */
+	--color-bg-primary: #fbf7f0;
+	--color-bg-secondary: #f5ede0;
+	--color-bg-tertiary: #efe2ce;
+	--color-bg-card: #fffdf9;
+	--color-bg-overlay: rgba(251, 247, 240, 0.85);
 
 	/* TEXT SYSTEM */
-	--color-text-primary: #f5ede0;
-	--color-text-secondary: #d6be96;
-	--color-text-tertiary: #a9906e;
-	--color-text-muted: #7c6b54;
+	--color-text-primary: #3a2a1f;
+	--color-text-secondary: #5a4632;
+	--color-text-tertiary: #8b7355;
+	--color-text-muted: #a9906e;
 
 	/* UI SYSTEM */
-	--color-border: rgba(245, 237, 224, 0.08);
-	--color-border-light: rgba(245, 237, 224, 0.12);
+	--color-border: rgba(58, 42, 31, 0.08);
+	--color-border-light: rgba(58, 42, 31, 0.12);
 
 	/* STATUS COLORS (sin cambios) */
 	--color-success-50: #f0fdf4;
@@ -152,23 +152,23 @@ THEME
 }
 
 /* ============================================
-LIGHT MODE (cozy cream)
+DARK MODE
 ============================================ */
 
-[data-theme="light"] {
-	--color-bg-primary: #fbf7f0;
-	--color-bg-secondary: #f5ede0;
-	--color-bg-tertiary: #efe2ce;
-	--color-bg-card: #fffdf9;
-	--color-bg-overlay: rgba(251, 247, 240, 0.85);
+[data-theme="dark"] {
+	--color-bg-primary: #241a14;
+	--color-bg-secondary: #2e2119;
+	--color-bg-tertiary: #3a2a1f;
+	--color-bg-card: #332419;
+	--color-bg-overlay: rgba(36, 26, 20, 0.8);
 
-	--color-text-primary: #3a2a1f;
-	--color-text-secondary: #5a4632;
-	--color-text-tertiary: #8b7355;
-	--color-text-muted: #a9906e;
+	--color-text-primary: #f5ede0;
+	--color-text-secondary: #d6be96;
+	--color-text-tertiary: #a9906e;
+	--color-text-muted: #7c6b54;
 
-	--color-border: rgba(58, 42, 31, 0.08);
-	--color-border-light: rgba(58, 42, 31, 0.12);
+	--color-border: rgba(245, 237, 224, 0.08);
+	--color-border-light: rgba(245, 237, 224, 0.12);
 }
 
 /* ============================================
