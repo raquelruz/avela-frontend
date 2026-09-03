@@ -1,11 +1,15 @@
-import { Navbar } from "./components/Navbar";
+import { Navbar } from "./components/Navigation/Navbar";
 
 export const App = () => {
 	return (
 		<>
-			<h1>Avela</h1>
-
 			<Navbar />
+
+			<div>
+				
+			</div>
 		</>
+
+		
 	);
 };
