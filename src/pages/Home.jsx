@@ -1,18 +1,17 @@
+import { useState } from "react";
 import { TaskList } from "../components/Tasks/TaskList";
+import { TASKS } from "../utils/tasks.js"
 
 export const Home = () => {
-	const tasks = [
-		{
-			title: "Aprender JavaScript",
-			subject: "JavaScript",
-			priority: "high",
-		},
-		{
-			title: "Estudiar inglés",
-			subject: "Idiomas",
-			priority: "medium",
-		},
-	];
+    const [ tasks, setTasks ] = useState(TASKS)
+
+const toggleTask = (id) => {
+    setTasks((prev) =>
+        prev.map((task) =>
+            task.id === id ? { ...task, completed: !task.completed } : task
+        )
+    );
+};
 
 	return (
 		<div className="max-w-6xl mx-auto px-6 py-10">
@@ -21,7 +20,7 @@ export const Home = () => {
 				<p className="text-text-tertiary mt-1">Tus tareas de hoy</p>
 			</div>
 
-			<TaskList tasks={tasks} />
+			<TaskList tasks={tasks} toggleTask={toggleTask}/>
 		</div>
 	);
 };
