@@ -1,7 +1,15 @@
+import { Navbar } from "./components/Navigation/Navbar";
+
 export const App = () => {
-  return (
-    <>
-    <h1>Avela</h1>
-    </>
-  )
-}
+	return (
+		<>
+			<Navbar />
+
+			<div>
+				
+			</div>
+		</>
+
+		
+	);
+};
